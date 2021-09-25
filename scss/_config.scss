@@ -1,0 +1,31 @@
+$base-color: #f7f9fd;
+$second-color: #0f589a;
+$blue: #4c6bff;
+$white : #fff;
+$font-color : #2d3f43;
+
+$font-weight:("regular": 400,
+    "medium": 600,
+    "bold": 800,
+    "bolder":900,
+);
+
+@mixin flex($dir, $justify, $align) {
+    display: flex;
+
+    @if ($dir !=null) {
+        flex-direction: $dir;
+
+    }
+
+    @if ($justify !=null) {
+
+        justify-content: $justify;
+    }
+
+    @if ($align !=null) {
+        align-items: $align;
+
+    }
+
+}

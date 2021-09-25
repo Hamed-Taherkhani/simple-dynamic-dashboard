@@ -1,0 +1,67 @@
+@import "./config";
+
+aside {
+    background-color: $base-color;
+    width: 180px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: fixed;
+
+    nav {
+        ul {
+            margin-top: 2rem;
+
+            li {
+                padding: 1rem;
+                transition: 200ms;
+                color: $font-color;
+                cursor: pointer;
+
+                @include flex(null, null, center);
+
+                img {
+                    margin-right: 0.5rem;
+                    width: 23px;
+                }
+
+                &:hover {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+
+#user-info {
+    padding: 1rem;
+    color: $font-color;
+    @include flex(column, null, center);
+
+    #bio {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100px;
+    }
+
+    h1 {
+        color: $blue;
+        font-size: 1.2rem;
+        font-weight: map-get($font-weight, medium);
+        margin-bottom: 0.3rem;
+    }
+}
+
+#profile {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.4);
+    }
+}
