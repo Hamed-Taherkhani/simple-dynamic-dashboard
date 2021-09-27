@@ -2,7 +2,7 @@
 
 aside {
     background-color: $base-color;
-    width: 180px;
+    width: $sidebar-width;
     height: 100vh;
     box-sizing: border-box;
     position: fixed;
