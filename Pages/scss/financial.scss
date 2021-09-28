@@ -1,0 +1,55 @@
+$font-size:("title1": 1.6rem,
+    "title2": 1.2rem,
+    "title3": 1.1rem);
+
+$text-color:("title1":#000,
+    "title2": rgb(49, 49, 49),
+    "text": rgb(68, 68, 68));
+
+#container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: map-get($font-size, title1);
+        color: map-get($map: $text-color, $key: title1);
+    }
+
+    h3 {
+        font-size: map-get($map: $font-size, $key: title2);
+        color: map-get($map: $text-color, $key: title2);
+    }
+}
+
+#chart {
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 32vmax;
+}
+
+#myChart {
+    display: inline-block;
+}
+
+#income-per-app {
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+    box-sizing: border-box;
+
+    td,
+    th {
+        padding: 0.7rem;
+        border-bottom: 1px lightgray solid;
+    }
+
+    th {
+        color: #4c6bff;
+        font-size: map-get($map: $font-size, $key: title2);
+    }
+
+    td {
+        text-align: center;
+    }
+}
