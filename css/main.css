@@ -90,4 +90,26 @@ main {
 body {
   font-family: 'Ubuntu', sans-serif;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #7e7e7e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /*# sourceMappingURL=main.css.map */
