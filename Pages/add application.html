@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css-reset.css" />
+    <link rel="stylesheet" href="./css/add application.css" />
+  </head>
+  <style id="style__"></style>
+  <body>
+    <div id="container">
+      <form action="" method="post">
+        <h2>Release applications</h2>
+        <input
+          type="text"
+          name="app_name"
+          id="app-name"
+          placeholder="App name"
+        />
+        <input
+          type="text"
+          name="about_app"
+          id="about"
+          placeholder="About application"
+        />
+        <span>App icon</span>
+        <input type="file" name="apk_file" id="apk-file" accept=".apk" />
+        <span>App screen shots</span>
+        <input
+          type="file"
+          name="screen_shots"
+          id="screen-shots"
+          multiple
+          accept=".png, .jpeg, .jpg"
+        />
+      </form>
+    </div>
+  </body>
+</html>

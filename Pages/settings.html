@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css-reset.css" />
+    <link rel="stylesheet" href="./css/settings.css" />
+  </head>
+  <style id="style__"></style>
+  <body>
+    <div id="container">
+      <section id="user-info_">
+        <h2>Settings</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td class="common-text">Full name:</td>
+              <td>Name Family</td>
+            </tr>
+            <tr>
+              <td class="common-text">Budget:</td>
+              <td>Dollar$</td>
+            </tr>
+            <tr>
+              <td class="common-text">Birth:</td>
+              <td>00/00/0000</td>
+            </tr>
+            <tr>
+              <td class="common-text">Email</td>
+              <td>email@mail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <form action="./" method="post" id="change-user-info">
+        <h2>Change User info</h2>
+        <section>
+          <input
+            type="text"
+            name="first_name"
+            id="first-name"
+            placeholder="First name"
+          />
+          <input type="text" name="family" id="family" placeholder="Family" />
+        </section>
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <input type="date" name="birth" id="birth" />
+        <button type="submit">Submit changes</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+#container {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+#container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#container form input {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #a3a3a3;
+}
+
+#container form input[type="file"] {
+  margin-top: 0.5rem;
+}
+
+#container form span {
+  margin-left: 1rem;
+}
+
+@media (min-width: 800px) {
+  form {
+    width: 60%;
+    -webkit-box-shadow: 1px 2px 5px lightgray;
+            box-shadow: 1px 2px 5px lightgray;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+  }
+}
+/*# sourceMappingURL=add application.css.map */
