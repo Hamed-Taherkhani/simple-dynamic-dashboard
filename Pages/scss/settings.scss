@@ -2,7 +2,7 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 
     button {
         outline: none;
@@ -45,8 +45,8 @@
 
     input {
         width: 100%;
-        padding: 0.5rem 1rem;
-        margin: 0.5rem 0;
+        padding: 1rem;
+        margin: 1rem 0;
         box-sizing: border-box;
         border-radius: 5px;
         border: 1px solid rgb(138, 138, 138);
@@ -64,12 +64,25 @@
 }
 
 @media (min-width: 768px) {
+    #container {
+        flex-direction: row;
+    }
 
     #change-user-info,
     #user-info_ {
-        width: 400px;
-        box-shadow: 2px 2px 5px #494d6131;
+        box-shadow: 2px 2px 5px #10227a31;
         padding: 2rem 1rem;
         border-radius: 15px;
     }
+
+    #change-user-info {
+        width: 60%;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+
+    #user-info_ {
+        width: 40%;
+    }
+
 }
